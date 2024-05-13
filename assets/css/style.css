@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Fira Sans", sans-serif;
-    color: #494949;
+    color: #102a3b;
 }
 
 body {
@@ -29,9 +29,11 @@ h4 {
     display: flex;
     justify-content: center;
 }
-.text{
+
+.text {
     margin: 3rem 0;
 }
+
 #header {
     position: fixed;
     width: 100%;
@@ -64,7 +66,7 @@ h4 {
 .topnav-right a {
     /* margin: 0 0.4rem; */
     text-decoration: none;
-    color: #666666;
+    color: inherit;
     padding: 10px 15px;
     border-radius: 8px;
     transition: 0.4s ease-in-out;
@@ -74,6 +76,82 @@ h4 {
 .topnav-right a:hover {
     background-color: #57cc99;
     color: #ffffff;
+}
+
+.footer_main {
+    background-color: #102a3b;
+    padding: 1rem;
+}
+
+.footer_logo {
+    height: 4rem;
+    width: auto;
+    margin: 1rem 0;
+}
+
+.btn_footer {
+    display: block;
+    width: 13rem;
+    height: 4.5rem;
+    padding: 0.5rem;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    margin: 1rem 0;
+    background-color: #0a2435;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+}
+
+.btn_footer:hover {
+    background-color: #57cc99;
+    border: 1px solid #57cc99;
+}
+
+.btn_footer:hover>.text_menor {
+    color: #ffffff;
+}
+
+.btn_footer p {
+    margin: 0;
+    color: white;
+}
+
+.text_menor {
+    color: #a5a5a5;
+    font-size: 10px;
+}
+
+.text_footer {
+    color: white;
+    margin-bottom: -5px;
+    color: #bebebe;
+    font-size: 15px;
+    margin-top:2rem;
+}
+
+h6 {
+    color: white !important;
+    /* display: flex;
+    justify-content: center; */
+    font-weight: bolder !important;
+    margin-top: 3rem !important;
+    font-size: 1.7rem !important;
+}
+
+ul {
+    padding: 0 !important;
+}
+
+.part_lista li {
+    color: white;
+    list-style: none;
+    font-size: 12px;
+    /* display: flex;
+    justify-content: center; */
 }
 
 
@@ -91,9 +169,13 @@ h4 {
     padding: 15px 25px;
     background-color: #57cc99;
     border: 0;
-
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: .3s linear;
+}
+
+.instagram:hover {
+    transform: scale(1.1);
 }
 
 .instagram a {
@@ -123,6 +205,13 @@ h4 {
     animation: fadeIn 1s ease-in-out;
 }
 
+.folhas{
+    position: absolute;
+    margin-top: 15rem;
+    width: auto;
+    height: 9rem;
+}
+
 /* Animação de fadeIn */
 @keyframes fadeIn {
     from {
@@ -133,30 +222,42 @@ h4 {
         opacity: 1;
     }
 }
-.card_info{
+
+.card_info {
     width: 22rem;
     /* border: 1px solid #57cc99; */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     margin: 1rem;
+    transition: .3s linear;
+    cursor: pointer;
 }
-.card_info h5{
+.card_info:hover {
+    transform: scale(1.1);
+}
+
+
+.card_info h5 {
     font-weight: bold;
     font-size: 15px;
     margin-top: 5px;
 }
-.card_info p{
+
+.card_info p {
     font-size: 10px;
 }
 
-.card_info img{
+.card_info img {
     width: 100%;
     height: auto;
 }
 
-.card_info p, .card_info h5{
+.card_info p,
+.card_info h5 {
     padding: 0 0.5rem;
 }
+
+
 
 /* ########################## RESPONSIVIDADE ############################################*/
 
@@ -180,7 +281,8 @@ h4 {
     }
 
     .sec {
-        height: 80vh;
+        /* height: 100vh; */
+        margin-bottom: 8rem;
     }
 
     .responsive_menu {
@@ -215,6 +317,10 @@ h4 {
 @media (max-width: 1000px) {
     .main {
         margin: 10rem 3rem 0 3rem;
+    }
+
+    .folhas{
+        display: none;
     }
 
     .nav_logo {
