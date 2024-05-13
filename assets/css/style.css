@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Fira Sans", sans-serif;
-    color: #666666;
+    color: #494949;
 }
 
 body {
@@ -20,6 +20,7 @@ h3 {
     font-size: 2.3rem !important;
     display: flex;
     justify-content: center;
+    margin: 6rem;
 }
 
 h4 {
@@ -28,13 +29,15 @@ h4 {
     display: flex;
     justify-content: center;
 }
-
+.text{
+    margin: 3rem 0;
+}
 #header {
     position: fixed;
     width: 100%;
     top: 0;
     background-color: transparent;
-    padding: 5px 0;
+    /* padding: 5px 0; */
     /* text-align: center; */
     transition: box-shadow 0.5s ease-in-out;
     z-index: 11;
@@ -48,7 +51,6 @@ h4 {
 .nav_logo {
     width: auto;
     height: 50px;
-    margin: 0.5rem 0 0 6rem;
 }
 
 /* Right-aligned section inside the top navigation */
@@ -63,23 +65,24 @@ h4 {
     /* margin: 0 0.4rem; */
     text-decoration: none;
     color: #666666;
-    padding: 10px 20px;
+    padding: 10px 15px;
     border-radius: 8px;
+    transition: 0.4s ease-in-out;
+
 }
 
 .topnav-right a:hover {
     background-color: #57cc99;
     color: #ffffff;
-  }
+}
+
 
 .main_img {
     width: auto;
-    height: 25rem;
-    margin: 0 5rem;
 }
 
 .sec {
-    height: 90vh;
+    height: 80vh;
 }
 
 .texto_intro {
@@ -88,41 +91,189 @@ h4 {
 }
 
 .instagram {
-    padding: 10px 25px;
+    padding: 15px 25px;
     background-color: #57cc99;
     border: 0;
-    color: #ffffff;
-    border-radius: 8px;
+
+    border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.instagram a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav_logo_responsive {
+    height: 3rem;
+    width: auto;
+}
+
+/* Estilos para a animação de carregamento */
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: fadeIn 1s ease-in-out;
+    position: absolute;
+}
+
+/* Estilos para o conteúdo do site */
+.body {
+    display: none;
+    /* Inicia oculto */
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animação de fadeIn */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+.card_info{
+    width: 22rem;
+    /* border: 1px solid #57cc99; */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin: 1rem;
+}
+.card_info h5{
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 5px;
+}
+.card_info p{
+    font-size: 10px;
+}
+
+.card_info img{
+    width: 100%;
+    height: auto;
+}
+
+.card_info p, .card_info h5{
+    padding: 0 0.5rem;
 }
 
 /* ########################## RESPONSIVIDADE ############################################*/
 
 /* COMPUTADOR  */
 
+
+/* NOTEBOOK */
+
 @media (min-width: 1000px) {
     .main {
-        margin: 10rem 18rem 0 18rem;
+        margin: 10rem 10rem 0 10rem;
+    }
+
+    #header {
+        padding: 0 3rem;
     }
 
     .divisao {
         display: grid;
         grid-template-columns: 50% 50%;
     }
-}
 
-/* NOTEBOOK */
+    .responsive_menu {
+        display: none;
+    }
 
-@media (min-width: 700px) {
-    .main {
-        margin: 10rem 6rem 0 6rem;
+    .nav_logo {
+        margin: 0.7rem 0 0 6rem;
+    }
+
+    .main_img {
+        margin: 0 30%;
+        height: 25rem;
+    }
+
+    .responsive_menu {
+        display: none !important;
+    }
+
+    .topnav_responsive {
+        display: none;
+    }
+
+    .offcanvas,
+    .offcanvas-backdrop {
+        display: none !important;
     }
 }
 
-/* CELULAR */
+/* TABLET  */
 
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
     .main {
         margin: 10rem 3rem 0 3rem;
     }
+
+    .nav_logo {
+        margin: 0.7rem 0 0 2.8rem;
+    }
+
+    .topnav-right {
+        display: none;
+    }
+
+    .responsive_menu {
+        display: block !important;
+        float: right;
+        margin: 1.2rem 3rem 0 0;
+    }
+
+    .responsive_menu i {
+        color: #57cc99 !important;
+        font-size: 2rem;
+    }
+
+    .main_img {
+        margin: 2.5rem 0;
+        height: 25rem;
+    }
+
+    .topnav_responsive {
+        display: block;
+        /* margin-left: 0.8rem; */
+        margin-top: -15px;
+    }
+
+    .topnav_responsive a {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        margin-top: 10px;
+        padding: 10px 20px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .topnav_responsive a:hover {
+        background-color: #57cc99;
+        color: #ffffff;
+        width: 100%;
+
+    }
+
+    .offcanvas {
+        height: 23rem !important;
+    }
+}
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+    .main_img {
+        margin: 2.5rem 0;
+        height: 20rem;
+    }
+
 }
