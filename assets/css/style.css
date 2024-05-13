@@ -404,3 +404,117 @@ ul {
     }
 
 }
+
+/* API CONFIGURAÇÕES DE ESTILO  */
+/* Configuração API */
+/* api */
+
+.container-api1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .container-api2{
+    background-color: #3a9b71d7;
+    box-shadow: rgba(3, 4, 3, 0.431) 0px 3px 8px;
+    padding: 2rem;
+    color: #c6d4c7;
+    border-radius: 1rem;
+  }
+  
+  #city{
+    color: #fdfdfd;
+  }
+  
+  /* form */
+  .form h3{
+    margin-bottom: 1rem;
+    color: #fdfdfd;
+  }
+  
+  .form-input-container{
+    display: flex;
+  }
+  
+  .form input{
+    padding: .8rem;
+    border: none;
+    flex: 1;
+    border-radius: 4px;
+  }
+
+  i{
+    color: #272751f4;
+  }
+  
+  .form button{
+    padding: .8rem;
+    min-width: 50px;
+    margin-left: 8px;
+    background-color: #fdfdfd;
+    color: #57cc99;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .hide{
+    display: none;
+  }
+  
+  /* Clima */
+  #weather-data{
+    border-top: 1px solid #fff;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    text-align: center;
+  }
+  
+  #weather-data h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.6rem;
+  }
+  
+  #weather-data h2 i{
+    font-size: 1rem;
+  }
+  
+  #weather-data span{
+    margin: 0.6rem;
+  }
+  
+  #country{
+    height: 15px;
+  }
+  
+  #description-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.6rem 0;
+  }
+  
+  #description{
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  
+  #details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #details-container #humidity {
+    border-right: 1px solid #fff;
+    margin: 0.6rem;
+    padding: 0.6rem;
+  }
+
+  #humidity{ 
+    margin-bottom: 0px; 
+  }
