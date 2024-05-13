@@ -18,16 +18,12 @@ h2 {
 
 h3 {
     font-size: 2.3rem !important;
-    display: flex;
-    justify-content: center;
-    margin: 6rem;
+    
 }
 
 h4 {
     font-size: 1.5rem !important;
     color: #57cc99 !important;
-    display: flex;
-    justify-content: center;
     margin-top: 3rem !important;
 }
 
@@ -131,7 +127,7 @@ h4 {
     margin-bottom: -5px;
     color: #bebebe;
     font-size: 15px;
-    margin-top:2rem;
+    margin-top: 2rem;
 }
 
 h6 {
@@ -212,11 +208,11 @@ ul {
     height: 50px;
     font-size: 24px;
     cursor: pointer;
-  }
-  
-  #scrollToTopBtn:hover {
+}
+
+#scrollToTopBtn:hover {
     background-color: #47a77d;
-  }
+}
 
 /* Estilos para o conteúdo do site */
 .body {
@@ -225,7 +221,7 @@ ul {
     animation: fadeIn 1s ease-in-out;
 }
 
-.folhas{
+.folhas {
     position: absolute;
     margin-top: 15rem;
     width: auto;
@@ -252,6 +248,7 @@ ul {
     transition: .3s linear;
     cursor: pointer;
 }
+
 .card_info:hover {
     transform: scale(1.1);
 }
@@ -315,7 +312,7 @@ ul {
 
     .main_img {
         margin: 0 30%;
-        height: 25rem;
+        height: 34rem;
     }
 
     .responsive_menu {
@@ -330,6 +327,17 @@ ul {
     .offcanvas-backdrop {
         display: none !important;
     }
+
+    h3 {
+        display: flex;
+        justify-content: center;
+        margin: 6rem;
+    }
+
+    h4 {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 /* TABLET  */
@@ -339,7 +347,7 @@ ul {
         margin: 10rem 3rem 0 3rem;
     }
 
-    .folhas{
+    .folhas {
         display: none;
     }
 
@@ -409,47 +417,48 @@ ul {
 /* Configuração API */
 /* api */
 
-.container-api1{
+.container-api1 {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
-  }
-  
-  .container-api2{
-    background-color: #3a9b71d7;
+    margin: 3rem;
+}
+
+.container-api2 {
+    background-color: #ffffff;
     box-shadow: rgba(3, 4, 3, 0.431) 0px 3px 8px;
     padding: 2rem;
-    color: #c6d4c7;
+    color: #363636;
     border-radius: 1rem;
-  }
-  
-  #city{
-    color: #fdfdfd;
-  }
-  
-  /* form */
-  .form h3{
+}
+
+#city {
+    color: #363636;
+}
+
+/* form */
+.form h3 {
     margin-bottom: 1rem;
-    color: #fdfdfd;
-  }
-  
-  .form-input-container{
+    color: #57cc99;
+}
+
+.form-input-container {
     display: flex;
-  }
-  
-  .form input{
+}
+
+.form input {
     padding: .8rem;
-    border: none;
+    border: 1px solid #102a3b;
     flex: 1;
     border-radius: 4px;
-  }
+}
 
-  i{
-    color: #272751f4;
-  }
-  
-  .form button{
+i {
+    color: #363636;
+}
+
+.form button {
     padding: .8rem;
     min-width: 50px;
     margin-left: 8px;
@@ -458,63 +467,63 @@ ul {
     border: none;
     cursor: pointer;
     border-radius: 4px;
-  }
-  
-  .hide{
+}
+
+.hide {
     display: none;
-  }
-  
-  /* Clima */
-  #weather-data{
+}
+
+/* Clima */
+#weather-data {
     border-top: 1px solid #fff;
     margin-top: 1.5rem;
     padding-top: 1.5rem;
     text-align: center;
-  }
-  
-  #weather-data h2{
+}
+
+#weather-data h2 {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 0.6rem;
-  }
-  
-  #weather-data h2 i{
+}
+
+#weather-data h2 i {
     font-size: 1rem;
-  }
-  
-  #weather-data span{
+}
+
+#weather-data span {
     margin: 0.6rem;
-  }
-  
-  #country{
+}
+
+#country {
     height: 15px;
-  }
-  
-  #description-container{
+}
+
+#description-container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0.6rem 0;
-  }
-  
-  #description{
+}
+
+#description {
     font-weight: bold;
     text-transform: capitalize;
-  }
-  
-  #details-container {
+}
+
+#details-container {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  #details-container #humidity {
+}
+
+#details-container #humidity {
     border-right: 1px solid #fff;
     margin: 0.6rem;
     padding: 0.6rem;
-  }
+}
 
-  #humidity{ 
-    margin-bottom: 0px; 
-  }
+#humidity {
+    margin-bottom: 0px;
+}
