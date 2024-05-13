@@ -11,7 +11,7 @@ window.addEventListener('scroll', function () {
 setTimeout(function() {
   document.querySelector('.loading').style.display = 'none';
   document.querySelector('.body').style.display = 'block';
-}, 4000);
+}, 3000);
 
 
 const scrollToTopBtn = document.getElementById("scrollToTopBtn");
