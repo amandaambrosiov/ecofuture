@@ -81,9 +81,6 @@ h4 {
     width: auto;
 }
 
-.sec {
-    height: 80vh;
-}
 
 .texto_intro {
     display: flex;
@@ -180,6 +177,10 @@ h4 {
     .divisao {
         display: grid;
         grid-template-columns: 50% 50%;
+    }
+
+    .sec {
+        height: 80vh;
     }
 
     .responsive_menu {
