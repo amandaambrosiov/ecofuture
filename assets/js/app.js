@@ -12,3 +12,21 @@ setTimeout(function() {
   document.querySelector('.loading').style.display = 'none';
   document.querySelector('.body').style.display = 'block';
 }, 4000);
+
+
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+window.addEventListener("scroll", () => {
+  // Mostrar o botão quando a página é rolada para baixo
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollToTopBtn.style.display = "block";
+  } else {
+    scrollToTopBtn.style.display = "none";
+  }
+});
+
+// Rolar suavemente para o topo quando o botão é clicado
+scrollToTopBtn.addEventListener("click", () => {
+  document.body.scrollTop = 0; // Para navegadores Safari
+  document.documentElement.scrollTop = 0; // Para navegadores Chrome, Firefox, IE e Opera
+});
