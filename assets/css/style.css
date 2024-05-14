@@ -447,9 +447,11 @@ ul {
     display: flex;
 }
 
+
+
 .form input {
     padding: .8rem;
-    border: 1px solid #102a3b;
+    border: 1px solid #203848;
     flex: 1;
     border-radius: 4px;
 }
@@ -497,7 +499,11 @@ i {
 }
 
 #country {
-    height: 15px;
+    max-width: 60px;
+}
+
+#description, #wind, p{
+    margin-bottom: 0;
 }
 
 #description-container {
