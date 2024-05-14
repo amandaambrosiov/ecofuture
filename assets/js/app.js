@@ -30,3 +30,4 @@ scrollToTopBtn.addEventListener("click", () => {
   document.body.scrollTop = 0; // Para navegadores Safari
   document.documentElement.scrollTop = 0; // Para navegadores Chrome, Firefox, IE e Opera
 });
+
