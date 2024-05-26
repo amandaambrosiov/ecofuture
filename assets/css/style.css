@@ -12,6 +12,29 @@ body {
     background-color: #ffffff;
 }
 
+.body {
+    display: none;
+    /* Inicia oculto */
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animação de fadeIn */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+ul {
+    padding: 0 !important;
+}
+
+/* TÍTULOS  */
+
 h2 {
     font-size: 3rem !important;
 }
@@ -27,9 +50,39 @@ h4 {
     margin-top: 3rem !important;
 }
 
+h6 {
+    color: white !important;
+    /* display: flex;
+    justify-content: center; */
+    font-weight: bolder !important;
+    margin-top: 3rem !important;
+    font-size: 1.7rem !important;
+}
+
+/* TEXTO  */
+
 .text {
     margin: 3rem 0;
 }
+
+/* Estilos para a animação de carregamento */
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: fadeIn 1s ease-in-out;
+    position: absolute;
+}
+
+/* LOGO DO HEADER  */
+
+.nav_logo {
+    width: auto;
+    height: 50px;
+}
+
+/* ESTILIZAÇÃO DO HEADER  */
 
 #header {
     position: fixed;
@@ -47,12 +100,6 @@ h4 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.nav_logo {
-    width: auto;
-    height: 50px;
-}
-
-/* Right-aligned section inside the top navigation */
 .topnav-right {
     float: right;
     padding: 15px;
@@ -75,92 +122,32 @@ h4 {
     color: #ffffff;
 }
 
-.footer_main {
-    background-color: #102a3b;
-    padding: 1rem;
-}
-
-.footer_logo {
-    height: 4rem;
+.nav_logo_responsive {
+    height: 3rem;
     width: auto;
-    margin: 1rem 0;
 }
 
-.btn_footer {
-    display: block;
-    width: 13rem;
-    height: 4.5rem;
-    padding: 0.5rem;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-    margin: 1rem 0;
-    background-color: #0a2435;
-    color: white;
-    border: 1px solid white;
-    border-radius: 10px;
-    text-decoration: none;
-    transition: .3s ease-in-out;
-}
-
-.btn_footer:hover {
-    background-color: #57cc99;
-    border: 1px solid #57cc99;
-}
-
-.btn_footer:hover>.text_menor {
-    color: #ffffff;
-}
-
-.btn_footer p {
-    margin: 0;
-    color: white;
-}
-
-.text_menor {
-    color: #a5a5a5;
-    font-size: 10px;
-}
-
-.text_footer {
-    color: white;
-    margin-bottom: -5px;
-    color: #bebebe;
-    font-size: 15px;
-    margin-top: 2rem;
-}
-
-h6 {
-    color: white !important;
-    /* display: flex;
-    justify-content: center; */
-    font-weight: bolder !important;
-    margin-top: 3rem !important;
-    font-size: 1.7rem !important;
-}
-
-ul {
-    padding: 0 !important;
-}
-
-.part_lista li {
-    color: white;
-    list-style: none;
-    font-size: 12px;
-    /* display: flex;
-    justify-content: center; */
-}
-
+/* CORPO DO SITE  */
 
 .main_img {
     width: auto;
 }
 
+/* IMAGEM DE ESTILIZAÇÃO  */
+
+.folhas {
+    position: absolute;
+    margin-top: 15rem;
+    width: auto;
+    height: 9rem;
+}
 
 .texto_intro {
     display: flex;
     align-items: center;
 }
+
+/* BOTÃO DE ACESSO AO INSTRAGRAM  */
 
 .instagram {
     padding: 15px 25px;
@@ -180,20 +167,13 @@ ul {
     color: #ffffff;
 }
 
-.nav_logo_responsive {
-    height: 3rem;
-    width: auto;
+.part_lista li {
+    color: white;
+    list-style: none;
+    font-size: 12px;
 }
 
-/* Estilos para a animação de carregamento */
-.loading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    animation: fadeIn 1s ease-in-out;
-    position: absolute;
-}
+/* SCROLL TO TOP  */
 
 #scrollToTopBtn {
     display: none;
@@ -214,30 +194,7 @@ ul {
     background-color: #47a77d;
 }
 
-/* Estilos para o conteúdo do site */
-.body {
-    display: none;
-    /* Inicia oculto */
-    animation: fadeIn 1s ease-in-out;
-}
-
-.folhas {
-    position: absolute;
-    margin-top: 15rem;
-    width: auto;
-    height: 9rem;
-}
-
-/* Animação de fadeIn */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
+/* CARDS DE NOTÍCIAS  */
 
 .card_info {
     width: 22rem;
@@ -252,7 +209,6 @@ ul {
 .card_info:hover {
     transform: scale(1.1);
 }
-
 
 .card_info h5 {
     font-weight: bold;
@@ -317,7 +273,62 @@ ul {
     transform: scale(1.1);
 }
 
+/* ESTILIZAÇÃO DO FOOTER  */
 
+.footer_main {
+    background-color: #102a3b;
+    padding: 1rem;
+}
+
+.footer_logo {
+    height: 4rem;
+    width: auto;
+    margin: 1rem 0;
+}
+
+.btn_footer {
+    display: block;
+    width: 13rem;
+    height: 4.5rem;
+    padding: 0.5rem;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    margin: 1rem 0;
+    background-color: #0a2435;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+}
+
+.btn_footer:hover {
+    background-color: #57cc99;
+    border: 1px solid #57cc99;
+}
+
+.btn_footer:hover>.text_menor {
+    color: #ffffff;
+}
+
+.btn_footer p {
+    margin: 0;
+    color: white;
+}
+
+.text_menor {
+    color: #a5a5a5;
+    font-size: 10px;
+}
+
+.text_footer {
+    color: white;
+    margin-bottom: -5px;
+    color: #bebebe;
+    font-size: 15px;
+    margin-top: 2rem;
+}
 
 /* ########################## RESPONSIVIDADE ############################################*/
 

@@ -1,3 +1,5 @@
+// HEADER FIXO 
+
 window.addEventListener('scroll', function () {
   var header = document.getElementById('header');
   if (window.scrollY > 0) {
@@ -7,12 +9,14 @@ window.addEventListener('scroll', function () {
   }
 });
 
-// Espera 3 segundos antes de mostrar o conteúdo
+// PRE-LOADER Espera 3 segundos antes de mostrar o conteúdo
+
 setTimeout(function() {
   document.querySelector('.loading').style.display = 'none';
   document.querySelector('.body').style.display = 'block';
 }, 3000);
 
+// SCROLL TO TOP 
 
 const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
